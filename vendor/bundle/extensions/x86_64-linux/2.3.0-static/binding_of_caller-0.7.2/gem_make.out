@@ -1,0 +1,16 @@
+current directory: /home/landry/ROR/RorApp/vendor/bundle/gems/binding_of_caller-0.7.2/ext/binding_of_caller
+/home/landry/.rbenv/versions/2.3.1/bin/ruby -r ./siteconf20161219-19501-18kj011.rb extconf.rb
+
+current directory: /home/landry/ROR/RorApp/vendor/bundle/gems/binding_of_caller-0.7.2/ext/binding_of_caller
+make "DESTDIR=" clean
+make: *** Aucune règle pour fabriquer la cible « clean ». Arrêt.
+
+current directory: /home/landry/ROR/RorApp/vendor/bundle/gems/binding_of_caller-0.7.2/ext/binding_of_caller
+make "DESTDIR="
+echo "Nada."
+Nada.
+
+current directory: /home/landry/ROR/RorApp/vendor/bundle/gems/binding_of_caller-0.7.2/ext/binding_of_caller
+make "DESTDIR=" install
+echo "Nada."
+Nada.

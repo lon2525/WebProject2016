@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Pseudo:</strong>
+  <%= @vendeur.pseudo %>
+</p>
+
+<p>
+  <strong>Nom:</strong>
+  <%= @vendeur.nom %>
+</p>
+
+<%= link_to 'Edit', edit_vendeur_path(@vendeur) %> |
+<%= link_to 'Back', vendeurs_path %>

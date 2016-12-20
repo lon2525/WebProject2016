@@ -1,0 +1,19 @@
+current directory: /home/landry/ROR/RorApp/vendor/bundle/gems/bcrypt-3.1.11/ext/mri
+/home/landry/.rbenv/versions/2.3.1/bin/ruby -r ./siteconf20161219-8174-rbeljj.rb extconf.rb
+creating Makefile
+
+current directory: /home/landry/ROR/RorApp/vendor/bundle/gems/bcrypt-3.1.11/ext/mri
+make "DESTDIR=" clean
+
+current directory: /home/landry/ROR/RorApp/vendor/bundle/gems/bcrypt-3.1.11/ext/mri
+make "DESTDIR="
+compiling crypt.c
+compiling bcrypt_ext.c
+compiling wrapper.c
+compiling crypt_gensalt.c
+compiling crypt_blowfish.c
+linking shared-object bcrypt_ext.so
+
+current directory: /home/landry/ROR/RorApp/vendor/bundle/gems/bcrypt-3.1.11/ext/mri
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 bcrypt_ext.so ./.gem.20161219-8174-1m8fz8o

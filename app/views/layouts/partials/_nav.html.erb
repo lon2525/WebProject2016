@@ -1,0 +1,29 @@
+<nav class="navbar navbar-inverse navbar-fixed-top", id="main-menu">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <%= link_to "AnuLan Store", root_path, class:"navbar-brand"%>
+    </div>
+    <div id="navbar" class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+      	<li><%= link_to "Store", store_path %></li>
+        <li><%= link_to "About", about_path %></li>
+         <li><%= link_to "Admin", admin_path %></li>
+         <li><%= link_to "Contact", contact_path %></li>
+       </ul>
+    
+      <ul class="nav navbar-nav navbar-right">
+      <% if user_signed_in? %>
+        <li><%= link_to "Log out", destroy_user_session_path, method: :delete %></li>
+        <%else%>
+        <li><%= link_to "Sign In", new_user_session_path %></li>
+        <li><%= link_to "Sign Up", new_user_registration_path %></li>
+       </ul>
+      <%end%>
+  </div>
+</nav>

@@ -1,0 +1,30 @@
+<div class="row">
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+       <div class="caption">
+         <h3><%= @produit.nom%></h3>
+
+         <p><%=@produit.description %></p>
+         
+         <p class="prix">
+			 <%= number_to_currency(@produit.prix,:unit=>'€')%>
+		 </p>
+
+	     <% if @produit.category %>
+	       <p>
+			<strong>Categorie:</strong>
+	 	    <%= @produit.category.nom %>
+		   </p>
+		 <%end%>
+		 <% if @produit.vendeur %>
+	       <p>
+			<strong>Vendeur:</strong>
+	 	    <%= @produit.vendeur.pseudo %>
+		   </p>
+		 <%end%>
+        
+       	 <p><a href="<%=store_path%>" class="btn btn-success" role="button">Retour au store</a></p>
+      </div>
+    </div>
+  </div>
+</div>

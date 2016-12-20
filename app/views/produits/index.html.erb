@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Liste produits</h1>
+
+
+<br>
+<table class="table table-striped">
+    <thead>
+      <tr>
+       <th>Nom</th>
+      <th>Description</th>
+      <th>Prix</th>
+      <th colspan="3"></th>
+      </tr>
+    </thead>
+    <tbody>
+    <% @produits.each do |produit| %>
+      <tr>
+        <td><%=produit.nom %></td>
+        <td><%= produit.description %></td>
+        <td><%= produit.prix %></td>
+        <td><%= link_to 'Voir', produit %></td>
+        <td><%= link_to 'Modifier', edit_produit_path(produit) %></td>
+        <td><%= link_to 'Supprimer', produit, method: :delete, data: { confirm: 'Sur de vouloir supprimer?' } %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+  </table>
+
+<%= link_to 'Nouveau Produit', new_produit_path,  class: "btn btn-default" %>

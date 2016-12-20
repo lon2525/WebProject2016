@@ -1,0 +1,15 @@
+current directory: /home/landry/ROR/RorApp/vendor/bundle/gems/debug_inspector-0.0.2/ext/debug_inspector
+/home/landry/.rbenv/versions/2.3.1/bin/ruby -r ./siteconf20161219-19501-1xis0qf.rb extconf.rb
+creating Makefile
+
+current directory: /home/landry/ROR/RorApp/vendor/bundle/gems/debug_inspector-0.0.2/ext/debug_inspector
+make "DESTDIR=" clean
+
+current directory: /home/landry/ROR/RorApp/vendor/bundle/gems/debug_inspector-0.0.2/ext/debug_inspector
+make "DESTDIR="
+compiling debug_inspector.c
+linking shared-object debug_inspector.so
+
+current directory: /home/landry/ROR/RorApp/vendor/bundle/gems/debug_inspector-0.0.2/ext/debug_inspector
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 debug_inspector.so ./.gem.20161219-19501-18oayhj

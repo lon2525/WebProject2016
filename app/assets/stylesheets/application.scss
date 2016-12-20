@@ -1,0 +1,11 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import "devise_bootstrap_views";
+
+body{
+	padding-top: 15px;
+}
+
+#main-footer{
+	margin-top: 5em;
+}
